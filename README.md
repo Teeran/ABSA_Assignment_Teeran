@@ -28,7 +28,7 @@ Note: You can either run at feature level or at Scenario.
 
 1. Test Runner: - Edit runner file with correct @tag and execute runner file
 
-1. MAVEN: - mvn clean test -D tags=&quot;@RunwithTagCheck&quot;
+1. MAVEN: - mvn clean test -D tags=&quot;@MyFirst&quot;
 
 **Parameterisation:**
 
