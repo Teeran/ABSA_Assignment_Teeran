@@ -1,0 +1,11 @@
+<testsuite failures="0" name="features/TestingTagging.feature" skipped="0" tests="1" time="0.141362">
+  <testcase classname="features.TestingTagging" name="validate the response that is returned using xpath validation for tags/values" time="0.141362">
+    <system-out>* def CommonMethod = Java.type('ReusableMethod.utility') .................. passed
+* def Rand = new CommonMethod() ........................................... passed
+* def DateObject = call read('classpath:ReusableMethod/ReusableFeatureFunctions.feature') . passed
+* def date = DateObject.CurrentDate_YYYYMMDD() ............................ passed
+* def Last4Digit = Rand.generateRandomValue(4); ........................... passed
+* def MsgId = '021/DDINP/Puleng/' + date + "/" + Last4Digit ............... passed
+* print 'The Message ID is: ', MsgId ...................................... passed</system-out>
+  </testcase>
+</testsuite>

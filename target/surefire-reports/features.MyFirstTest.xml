@@ -1,0 +1,54 @@
+<testsuite failures="0" name="features/MyFirstTest.feature" skipped="0" tests="2" time="4.114421">
+  <testcase classname="features.MyFirstTest" name="validate the response that is returned using xpath validation for tags/values" time="2.067162">
+    <system-out>* def CommonMethod = Java.type('ReusableMethod.utility') .................. passed
+* def Rand = new CommonMethod() ........................................... passed
+* def DateObject = call read('classpath:ReusableMethod/ReusableFeatureFunctions.feature') . passed
+* def date = DateObject.CurrentDate_YYYYMMDD() ............................ passed
+* def Last4Digit = Rand.generateRandomValue(4); ........................... passed
+* def MsgId = '021/DDINP/Puleng/' + date + "/" + Last4Digit ............... passed
+* print 'The Message ID is: ', MsgId ...................................... passed
+* def xmlPayload = read('classpath:payload/payload.xml') .................. passed
+* print 'The payload is: ', xmlPayload .................................... passed
+Given url baseURl ......................................................... passed
+And path baseURLpath ...................................................... passed
+And request xmlPayload .................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def payloadResponse = response .......................................... passed
+* call read('classpath:payloadValidation/FileValidation.feature') ......... passed</system-out>
+  </testcase>
+  <testcase classname="features.MyFirstTest" name="validate the response that is returned using xpath validation for tags/values" time="2.047259">
+    <system-out>* def CommonMethod = Java.type('ReusableMethod.utility') .................. passed
+* def Rand = new CommonMethod() ........................................... passed
+* def DateObject = call read('classpath:ReusableMethod/ReusableFeatureFunctions.feature') . passed
+* def date = DateObject.CurrentDate_YYYYMMDD() ............................ passed
+* def Last4Digit = Rand.generateRandomValue(4); ........................... passed
+* def MsgId = '021/DDINP/Puleng/' + date + "/" + Last4Digit ............... passed
+* print 'The Message ID is: ', MsgId ...................................... passed
+* def xmlPayload = read('classpath:payload/payload.xml') .................. passed
+* print 'The payload is: ', xmlPayload .................................... passed
+Given url baseURl ......................................................... passed
+And path baseURLpath ...................................................... passed
+And request xmlPayload .................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def payloadResponse = response .......................................... passed
+* call read('classpath:payloadValidation/FileValidation.feature') ......... passed
+* def CommonMethod = Java.type('ReusableMethod.utility') .................. passed
+* def Rand = new CommonMethod() ........................................... passed
+* def DateObject = call read('classpath:ReusableMethod/ReusableFeatureFunctions.feature') . passed
+* def date = DateObject.CurrentDate_YYYYMMDD() ............................ passed
+* def Last4Digit = Rand.generateRandomValue(4); ........................... passed
+* def MsgId = '021/DDINP/Paul/' + date + "/" + Last4Digit ................. passed
+* print 'The Message ID is: ', MsgId ...................................... passed
+* def xmlPayload = read('classpath:payload/payload.xml') .................. passed
+* print 'The payload is: ', xmlPayload .................................... passed
+Given url baseURl ......................................................... passed
+And path baseURLpath ...................................................... passed
+And request xmlPayload .................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def payloadResponse = response .......................................... passed
+* call read('classpath:payloadValidation/FileValidation.feature') ......... passed</system-out>
+  </testcase>
+</testsuite>
